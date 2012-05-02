@@ -1,0 +1,19 @@
+<h1><%= @keynote.title %></h1>
+
+<div class="stats"><%= @keynote.files.count %> files; <%= @keynote.slides.count %> slides</div>
+
+<div class="files">
+	<ul>
+	<% @keynote.files.each do |file| %>
+		<li><%= file.original_file %></li>
+	<% end%>
+	</ul>
+</div>
+
+<div class="slides">
+	<ul>
+	<% @keynote.slides.each do |slide| %>
+		<li><%= image_tag slide.graphic_file.url %></li>
+	<% end%>
+	</ul>
+</div>

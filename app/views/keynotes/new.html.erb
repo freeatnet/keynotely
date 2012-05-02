@@ -1,0 +1,19 @@
+
+<%= form_for @keynote, :html=>{:multipart => true } do |f| %>
+	<%= @keynote.errors.full_messages.join(" -- ") %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	
+	<%= f.fields_for :files do |file_form|  %>
+		<div>
+    <%= file_form.label :original_file %><br />
+    <%= file_form.file_field :original_file %>
+    </div>
+  <% end %>
+	
+	<div class="action">
+		<%= f.submit %>
+	</div>
+<% end %>

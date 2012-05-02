@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  keynote: 
+  keynote_file: 
+  graphic_file: MyString
+
+two:
+  keynote: 
+  keynote_file: 
+  graphic_file: MyString

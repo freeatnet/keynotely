@@ -1,0 +1,12 @@
+== Keynotely
+
+An example app that uses CarrierWave gem and RMagick to receive single 
+or multi-frame files from the user, split them accordingly, and show as 
+a set of slides of a keynote.
+
+Done as a proof-of-concept, 2 hours of work (from an empty Rails app to the 
+current state), may not feature the nicest code or the best application 
+design.
+
+Under Do-Whatever-You-Want license. If you find this extra-useful, send me a 
+beer.
